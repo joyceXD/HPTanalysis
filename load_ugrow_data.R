@@ -32,7 +32,7 @@ rm(baby.file.path)
 filepath <- "./data/"
 
 # retrieve all feeding data csv files in this folder
-ReadFileList <- function(filepath){
+read_file_list <- function(filepath){
   filelist <- list.files(path = filepath, 
                          all.files = FALSE,
                          full.names = TRUE,
