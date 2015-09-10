@@ -130,6 +130,7 @@ generate_heatmap_for_tracker(UsageData.Heatmap.PerTracker)
 
 # Stacked bar plot: number of records per tracker per day for each --------
 
+# create a folder for storing the usage plots
 # dir.create("./plots/usage per day", 
 #            showWarnings = TRUE, 
 #            recursive = FALSE, 
@@ -167,5 +168,5 @@ for(i in unique(UsageData.Heatmap.PerTracker$BabyID)){
            path = "./plots/usage per day",
            width = 8,
            height = 6)
-    rm(g)
+    rm(selected.data, g)
 }
